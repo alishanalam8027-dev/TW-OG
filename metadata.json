@@ -1,0 +1,6 @@
+{
+  "name": "TW OG GK",
+  "description": "The ultimate Android General Knowledge Quiz Game featuring dynamic game modes, lifelines, streak combos, offline question banks, and native Material design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
