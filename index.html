@@ -6,12 +6,23 @@
     <meta name="theme-color" content="#0f172a" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <title>TW OG GK - Android Quiz Game</title>
     <meta name="description" content="TW OG GK: The ultimate Android General Knowledge Quiz Game featuring dynamic game modes, lifelines, streak combos, offline question banks, and native Material design." />
     <meta property="og:title" content="TW OG GK - Android Quiz Game" />
     <meta property="og:description" content="Test your brain with TW OG GK - the ultimate Android General Knowledge trivia game!" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration error:', err);
+          });
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

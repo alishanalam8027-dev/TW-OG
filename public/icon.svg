@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect x="12" y="12" width="488" height="488" rx="116" fill="none" stroke="url(#accentGrad)" stroke-width="8" opacity="0.6" />
+
+  <!-- Center emblem shape -->
+  <circle cx="256" cy="230" r="140" fill="url(#accentGrad)" filter="drop-shadow(0 15px 25px rgba(249, 115, 22, 0.4))" />
+
+  <!-- Brain / Knowledge Crown / Sparkles -->
+  <path d="M256 140 L275 195 L335 195 L285 230 L305 285 L256 250 L207 285 L227 230 L177 195 L237 195 Z" fill="#090d16" />
+  
+  <!-- Text Label -->
+  <text x="256" y="245" font-family="system-ui, -apple-system, sans-serif" font-size="54" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-2">OG</text>
+  <text x="256" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="#06b6d4" text-anchor="middle" letter-spacing="4">TW OG GK</text>
+  <text x="256" y="455" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="2">HINDI &amp; ENGLISH</text>
+</svg>

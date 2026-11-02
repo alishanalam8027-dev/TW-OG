@@ -14,6 +14,7 @@ import {
 import { AppSettings, Language } from '../types/quiz.js';
 import { Haptics } from '../utils/haptics.js';
 import { TRANSLATIONS } from '../data/translations.js';
+import { ApkBuildSection } from './ApkBuildSection.js';
 
 interface SettingsModalProps {
   settings: AppSettings;
@@ -51,6 +52,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         </div>
 
         <div className="space-y-3.5 max-h-[70vh] overflow-y-auto pr-1">
+          {/* APK Build & Download Section */}
+          <ApkBuildSection
+            language={settings.language}
+            soundEnabled={settings.soundEnabled}
+            hapticsEnabled={settings.hapticsEnabled}
+          />
+
           {/* Language selector */}
           <div className="p-3 rounded-2xl bg-slate-850 border border-slate-800">
             <div className="flex items-center gap-2 mb-2">

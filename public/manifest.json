@@ -1,17 +1,19 @@
 {
-  "name": "TW OG GK - Quiz Game",
+  "name": "TW OG GK - Hindi & English Quiz Game",
   "short_name": "TW OG GK",
-  "description": "The Ultimate Android General Knowledge Quiz Game",
+  "description": "The Ultimate Android General Knowledge Quiz Game with Hindi & English question banks, daily missions, campaign stages, and streak combos.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#090d16",
   "theme_color": "#0f172a",
   "orientation": "portrait",
+  "categories": ["games", "trivia", "education"],
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     }
   ]
 }

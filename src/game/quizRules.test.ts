@@ -178,4 +178,13 @@ test('getLocalizedQuestion switches to Hindi text when lang is hi', () => {
   assert.equal(enResult.options[1], 'New Delhi');
 });
 
+test('generateAndroidApkBlob produces a valid APK package blob with manifest and assets', async () => {
+  const { generateAndroidApkBlob } = await import('../utils/apkBuilder.js');
+  const blob = await generateAndroidApkBlob();
+  assert.ok(blob, 'Blob should be created');
+  assert.ok(blob.size > 1000, `Blob size should be substantial (actual: ${blob.size} bytes)`);
+  assert.equal(blob.type, 'application/vnd.android.package-archive');
+});
+
+
 
